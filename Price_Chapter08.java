@@ -2,22 +2,42 @@ package kadai_08;
 
 public class Price_Chapter08 {
 	public static void main(String[] args) {
-	
-	int userAge = 30;
-	int[] serviceCost = {1000,2000,3000,4000,5000,6000,7000,8000};
-	
-	
-	String cost = switch(userAge) {
-		case 10 -> serviceCost[0] + "円";
-		case 20 -> serviceCost[1] + "円";
-		case 30 -> serviceCost[2] + "円";
-		case 40 -> serviceCost[3] + "円";
-		case 50 -> serviceCost[4] + "円";
-		case 60 -> serviceCost[5] + "円";
-		case 70 -> serviceCost[6] + "円";
-		case 80 -> serviceCost[7] + "円";
-		default -> "別料金です";
-	};
-	System.out.println(userAge + "代の料金は" + cost +"です");
+		
+		int[] userAge = {10,20,30,40,50,60,70,80};
+		int[] serviceCost = {1000,2000,3000,4000,5000,6000,7000,8000};
+		int age = 30;
+		int order = 500;
+		
+		switch(age){
+		case 10 :
+			order = serviceCost[0];
+			break;
+		case 20 :
+			order = serviceCost[1];
+			break;
+		case 30 :
+			order = serviceCost[2];
+			break;
+		case 40 :
+			order = serviceCost[3];
+			break;
+		case 50 :
+			order = serviceCost[4];
+			break;
+		case 60 :
+			order = serviceCost[5];
+			break;
+		case 70 :
+			order = serviceCost[6];
+			break;
+		case 80 :
+			order = serviceCost[7];
+			break;
+		default :
+			order = 500;
+			break;
+			}
+				System.out.println(age + "代の料金は" + order +"です");
+		
 	}
 }

@@ -1,14 +1,15 @@
+
 package kadai_08;
 
-public class Price_Chapter08 {
+public class  Price_Chapter08 {
 	public static void main(String[] args) {
 		
-		int[] userAge = {10,20,30,40,50,60,70,80};
+		int[] userAge  = {10,20,30,40,50,60,70,80};
 		int[] serviceCost = {1000,2000,3000,4000,5000,6000,7000,8000};
 		int age = 30;
-		int order = 500;
+		int order;
 		
-		switch(age){
+		switch(age) {
 		case 10 :
 			order = serviceCost[0];
 			break;
@@ -33,11 +34,11 @@ public class Price_Chapter08 {
 		case 80 :
 			order = serviceCost[7];
 			break;
-		default :
+		default:
 			order = 500;
 			break;
 			}
-				System.out.println(age + "代の料金は" + order +"です");
+		System.out.println( age + "代の料金は" + order + "円です");
 		
 	}
 }

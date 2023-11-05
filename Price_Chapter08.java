@@ -3,10 +3,10 @@ package kadai_008;
 public class Price_Chapter08 {
 	public static void main(String[] args) {
 		
-		int[] userAge = {10,20,30,40,50,60,70,80};
+		
 		int[] serviceCost = {1000,2000, 3000,4000,5000};
 		int defaultCost = 500;
-		int age = 50;
+		int age = 30;
 		int cost = defaultCost;
 		
 		
